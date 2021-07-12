@@ -1,4 +1,9 @@
 {% extends "layout.html" %}
+{% block title %}{{title}}{% endblock %}
+{% block page %}{{title}}{% endblock %}
+{% block heading %}
+  {{ super() }}
+{% endblock %}
 {% block content %}
   <h3> This is the start of my child template</h3>
   <br>
